@@ -7,6 +7,11 @@ app.get('/', (req, res) => {
     res.send('route / called');
 });
 
+app.post('/', (req, res) => {
+    console.log('..............', req.body);
+    res.status(200).send('done');
+})
+
 app.get('/health', (req, res) => {
     console.log('working server');
     res.send('working server');
