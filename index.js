@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    console.log('..............', req.body);
+    console.log('.............. version update 1', req.body);
     res.status(200).send('done');
 })
 
